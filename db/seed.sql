@@ -23,9 +23,9 @@ INSERT INTO tea (tea_type, price, origin, brewing_temperature, brewing_time, caf
 ('Black Tea', 2.00, 'India', '95°C', '4 minutes', 40),
 ('Herbal Tea', 2.50, 'Egypt', '100°C', '5 minutes', 0);
 
-INSERT INTO cafes (name, opening_hours, closing_hours, average_rating, wifi_available, outdoor_seating, lgbtqia_friendly, established, blogger_id, pastry_id, coffee_id, tea_id ) VALUES 
-('Daltfresh', '04:59', '09:06', 1.2, false, true, true, '2016-02-22', 1, 1, 1, 1),
-('Konklab', '17:14', '15:41', 1.3, true, false, true, '2022-12-27', 2, 2, 2, 2),
-('Zontrax', '20:03', '05:20', 1.7, true, true, true, '2019-09-06', 3, 3, 3, 3),
-('Regrant', '23:33', '17:11', 2.8, false, true, true, '2019-05-22', 4, 1, 2, 3),
-('Bitchip', '07:43', '04:38', 3.4, true, true, false, '2006-08-12', 5, 2, 3, 1);
+INSERT INTO cafes (name, opening_hours, closing_hours, average_rating, wifi_available, outdoor_seating, lgbtqia_friendly, established) VALUES 
+('Daltfresh', '04:59', '09:06', 1.2, false, true, true, '2016-02-22'),
+('Konklab', '17:14', '15:41', 1.3, true, false, true, '2022-12-27'),
+('Zontrax', '20:03', '05:20', 1.7, true, true, true, '2019-09-06'),
+('Regrant', '23:33', '17:11', 2.8, false, true, true, '2019-05-22'),
+('Bitchip', '07:43', '04:38', 3.4, true, true, false, '2006-08-12');
