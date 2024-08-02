@@ -1,5 +1,6 @@
 const app = require('./app')
-require('dontenv').config()
+
+require('dotenv').config()
 
 const PORT = process.env.PORT
 
