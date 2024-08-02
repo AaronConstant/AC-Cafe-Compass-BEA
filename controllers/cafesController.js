@@ -12,7 +12,7 @@ cafe.get('/', async (req,res)=> {
     }
 })
 
-cafe.get('/:id', async (req,res)=>{
+cafe.get('/:id', async (req,res) => {
     const { id } = req.params;
     const oneCafe = await displayOneCafe(id)
     if(oneCafe.id){
@@ -21,6 +21,15 @@ cafe.get('/:id', async (req,res)=>{
         res.status(404).json({error: "Unable to find Cafe"})
     }
 
+})
+
+cafe.post('/', async (req,res) => {
+    try {
+        const newCafeEntry = await addNewCafe(req.body)
+        res.status(201).json(newCafeEntry)
+    }catch(error){
+        return error
+    }
 })
 
 
