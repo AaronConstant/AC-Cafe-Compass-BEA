@@ -9,7 +9,7 @@ INSERT INTO customer (id, first_name, last_name, username, password, email, gend
 (5, 'Tiphany', 'Tourville', 'ttourville4', 'aV5<{?sEM2d@UOJ', 'ttourville4@walmart.com', 'Bigender', '9/11/2019', true, '434-833-1561');
 
 
-INSERT INTO cafe (id, name, opening_hours, closing_hours, average_rating, wifi_available, outdoor_seating, lgbtqia_friendly, established, customer_id, menu_id) VALUES 
+INSERT INTO cafes (id, name, opening_hours, closing_hours, average_rating, wifi_available, outdoor_seating, lgbtqia_friendly, established, customer_id, menu_id) VALUES 
 (1, 'Daltfresh', '4:59 AM', '9:06 AM', 1.2, false, true, true, '2/22/2016', 1, 1),
 (2, 'Konklab', '5:14 PM', '3:41 PM', 1.3, true, false, true, '12/27/2022', 2, 2),
 (3, 'Zontrax', '8:03 PM', '5:20 AM', 1.7, true, true, true, '9/6/2019', 3, 3),

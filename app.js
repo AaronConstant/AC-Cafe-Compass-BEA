@@ -14,7 +14,7 @@ app.get('/', (req,res)=> {
 })
 
 app.use('/customer', customerController )
-app.use('/cafe', cafeController)
+app.use('/cafes', cafesController)
 
 
 
