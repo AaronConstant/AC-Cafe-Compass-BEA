@@ -29,3 +29,11 @@ INSERT INTO cafes (name, opening_hours, closing_hours, average_rating, wifi_avai
 ('Zontrax', '20:03', '05:20', 1.7, true, true, true, '2019-09-06'),
 ('Regrant', '23:33', '17:11', 2.8, false, true, true, '2019-05-22'),
 ('Bitchip', '07:43', '04:38', 3.4, true, true, false, '2006-08-12');
+
+INSERT INTO reviews (content, rating, cafe_id, blogger_id)
+VALUES 
+    ('Great coffee and ambiance', 5,1,2),
+    ('Average service', 3,2,3),
+    ('Excellent pastries', 4,3,4),
+    ('Lovely outdoor seating', 5,4,5),
+    ('Good WiFi but noisy', 4,1,1);

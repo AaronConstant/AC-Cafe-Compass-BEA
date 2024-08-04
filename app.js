@@ -5,7 +5,7 @@ const morgan = require('morgan')
 
 const bloggerController = require('./controllers/bloggerController')
 const cafesController = require('./controllers/cafesController')
-
+const reviewsController = require('./controllers/reviewsController')
 // Middleware 
 app.use(express.json())
 app.use(cors())
@@ -17,6 +17,7 @@ app.get('/', (req,res)=> {
 
 app.use('/bloggers', bloggerController )
 app.use('/cafes', cafesController)
+app.use('/reviews', reviewsController) 
 
 
 

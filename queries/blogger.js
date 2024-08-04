@@ -91,4 +91,4 @@ const removeBloggerEntry = async (id) => {
     }
 };
 
-module.exports= {getAllBloggers, getOneBlogger, createNewBlogger,updateBlogger,removeBloggerEntry}
+module.exports= { getAllBloggers, getOneBlogger, createNewBlogger,updateBlogger,removeBloggerEntry }

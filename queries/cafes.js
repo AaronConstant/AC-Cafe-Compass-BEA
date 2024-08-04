@@ -12,8 +12,11 @@ const displayAllCafes = async () => {
 
 const displayOneCafe = async (id)=> {
     try {
-        const oneReview = await db.one("SELECT*FROM cafes WHERE id=$1", id);
-        return oneReview;
+        if(id){
+            const oneReview = await db.one("SELECT*FROM cafes WHERE id=$1", id);
+            return oneReview;
+        }
+        
     } catch (error) {
         return error;
     }

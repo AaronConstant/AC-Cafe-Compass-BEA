@@ -1,7 +1,15 @@
 const express = require('express')
 const blogger = express.Router()
+const reviewsController = require('./reviewsController')
+const { 
+    getAllBloggers,
+    getOneBlogger,
+    createNewBlogger,
+    updateBlogger, 
+    removeBloggerEntry 
+    } = require('../queries/blogger')
 
-const { getAllBloggers,getOneBlogger,createNewBlogger,updateBlogger, removeBloggerEntry} = require('../queries/blogger')
+blogger.use('/:blogger_id/reviews', reviewsController)
 
 blogger.get('/', async (req, res) => {
     const allBloggers = await getAllBloggers()

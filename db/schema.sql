@@ -63,7 +63,7 @@ CREATE TABLE blogger (
 
 CREATE TABLE reviews (
     id SERIAL PRIMARY KEY,
-    review_name TEXT,
+    content TEXT,
     rating INT CHECK (rating >= 1 AND rating <= 5),
     cafe_id INT REFERENCES cafes(id) ON DELETE CASCADE,
     blogger_id INT REFERENCES blogger(id) ON DELETE CASCADE

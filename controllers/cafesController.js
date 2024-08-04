@@ -1,7 +1,16 @@
 const express = require('express')
 const cafe = express.Router()
 
-const { displayAllCafes, displayOneCafe, addNewCafe, updateCafe, removeCafe } = require('../queries/cafes')
+const { 
+    displayAllCafes, 
+    displayOneCafe, 
+    addNewCafe, 
+    updateCafe, 
+    removeCafe } = require('../queries/cafes')
+
+const reviewsController = require('./reviewsController')
+
+cafe.use('/:cafe_id/reviews', reviewsController)
 
 cafe.get('/', async (req,res)=> {
     const allCafes = await displayAllCafes();
